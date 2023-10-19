@@ -43,12 +43,32 @@ body {
     background-color: #151515;
 }
 
+#play_img {
+    width: 144px;
+    height: auto;
+}
+
+#mute_img {
+    width: 144px;
+    height: auto;
+}
+
+#song_img {
+    width: 144px;
+    height: auto;
+}
+
 /*NAV*/
 nav {
     width: 100%;
     height: 16rem;
 
 
+}
+
+nav #play:hover {
+    transition: background-color 0.2s;
+    background-color: #929292;
 }
 
 nav #play {
@@ -58,6 +78,11 @@ nav #play {
     border-radius: 100%;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+nav #mute:hover {
+    transition: background-color 0.2s;
+    background-color: #929292;
 }
 
 nav #mute {
@@ -132,4 +157,31 @@ nav ul li {
     line-height: normal;
     text-transform: uppercase;
     display: inline-block;
+}
+
+/* SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(97, 97, 97, 0.5);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #B9B9B9;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+/* FIN SCROLLBAR*/
+.none {
+    display: none;
 }
