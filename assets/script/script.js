@@ -1,22 +1,26 @@
-document.getElementById('mute').addEventListener('click', switchMute);
+document.getElementById('mute').addEventListener('click', function () {
+    switchPlay_Mute("mute");
+});
+document.getElementById('play').addEventListener('click', function () {
+    switchPlay_Mute("play");
+});
 
-function switchMute() {
-    if (localStorage.getItem("switchPlay") != null) {
+function switchPlay_Mute(local) {
+    let id = document.getElementById(local);
+    if (localStorage.getItem(local) != null) {
 
-        if (localStorage.getItem("switchPlay") == 0) {
-            document.getElementById('mute_img').classList.toggle('none');
-            document.getElementById('song_img').classList.toggle('none');
-            localStorage.setItem("switchPlay", 1)
+        if (localStorage.getItem(local) == 0) {
+
+            localStorage.setItem(local, 1)
         }
         else {
-            document.getElementById('song_img').classList.toggle('none');
-            document.getElementById('mute_img').classList.toggle('none');
-            localStorage.setItem("switchPlay", 0);
+            localStorage.setItem(local, 0);
         }
     } else {
-        document.getElementById('song_img').classList.toggle('none');
-        localStorage.setItem("switchPlay", 0);
+        localStorage.setItem(local, 0);
     }
 
+    id.children[0].classList.toggle('none');
+    id.children[1].classList.toggle('none');
 }
 
