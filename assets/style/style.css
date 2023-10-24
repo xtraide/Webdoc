@@ -6,6 +6,7 @@
     text-transform: uppercase;
     padding-bottom: 2rem;
 
+
 }
 
 .base-text {
@@ -61,8 +62,10 @@ nav .play-mute {
 }
 
 nav .play-mute img {
-    width: 7rem;
+    width: 6rem;
     height: auto;
+    margin-top: 1rem;
+
 }
 
 
@@ -85,12 +88,13 @@ nav h1 {
     font-style: normal;
     font-weight: 400;
     line-height: 87.5%;
+    text-align: left;
     /* 56px */
     text-transform: uppercase;
     margin-left: 1rem;
     margin-top: auto;
     margin-bottom: auto;
-    width: 9rem;
+    width: 16rem;
 
 }
 
@@ -100,6 +104,8 @@ nav h1 {
     height: 6rem;
     position: relative;
     left: calc(100% - 130px - 9rem);
+    display: none;
+    /*FFFFFFFF*/
 }
 
 #container-nav {
@@ -164,28 +170,21 @@ nav ul li {
 
 /*Fonda*/
 
-#container-fonda {
+#container-fonda-lieu {
     margin-top: 20rem;
-    display: flex;
     width: 100%;
-}
-
-
-
-#container-fonda article {
-
     text-align: left;
     display: flex;
     justify-content: space-evenly;
 }
 
 
-#container-fonda article #texte {
+#texte {
     width: 45%;
     height: auto;
 }
 
-#container-fonda article #imgdiv {
+#imgdiv {
     width: 37%;
     height: auto;
 }
@@ -198,3 +197,26 @@ nav ul li {
 
 
 /*FIN Fonda */
+/*
+
+interviews
+
+*/
+#container-interviews {
+    display: flex;
+}
+
+
+
+#right-arrow {
+    position: absolute;
+    right: 2rem;
+
+
+}
+
+/* 
+
+FIn interviews
+
+*/
