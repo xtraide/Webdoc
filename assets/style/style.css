@@ -189,7 +189,7 @@ nav ul li {
     height: auto;
 }
 
-#container-fonda img {
+#container-fonda-lieu img {
     width: 100%;
     height: auto;
     margin-top: 80px;
@@ -203,17 +203,57 @@ interviews
 
 */
 #container-interviews {
-    display: flex;
+    overflow: hidden;
+    width: 100%;
+
 }
+
+#container-interviews .citation {
+    width: 40%;
+    margin-left: 20%;
+}
+
+#container-interviews .auteur-citation {
+    width: 40%;
+    margin-left: 20%;
+    float: right;
+    margin-top: 0px;
+
+}
+
+
+#interviews {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    overflow: hidden;
+    display: grid;
+    grid-auto-flow: column;
+    -webkit-transition: 1s all;
+    transition: 1s all;
+    gap: 15rem;
+}
+
+#interviews div {
+
+
+    background-color: aqua;
+}
+
+
 
 
 
 #right-arrow {
     position: absolute;
     right: 2rem;
-
-
 }
+
+#left-arrow {
+    position: absolute;
+    left: 2rem;
+}
+
+
 
 /* 
 
