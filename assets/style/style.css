@@ -236,9 +236,7 @@ interviews
     left: 2rem;
 }
 
-/* 
-FIn interviews
-*/
+
 .slider2 {
     height: auto;
     width: 70%;
@@ -273,8 +271,7 @@ FIn interviews
 }
 
 .slider_content2 {
-    height: 100%;
-    width: 100%;
+
     display: flex;
     overflow: hidden;
     scroll-behavior: smooth;
@@ -283,9 +280,14 @@ FIn interviews
 .slider_content_item2 {
     height: 100%;
     min-width: 100%;
+    margin-right: 35px;
 }
 
 .slider_content_item2 img {
     height: 100%;
     width: 100%;
 }
+
+/* 
+FIn interviews
+*/

@@ -27,13 +27,14 @@ function switchPlay_Mute(local) {
 
 function previous1() {
     const widthSlider = document.querySelector(".slider2").offsetWidth;
-    document.querySelector(".slider_content2").scrollLeft -= widthSlider;
+    document.querySelector(".slider_content2").scrollLeft -= widthSlider + 35;
 }
 
 function next1() {
     const widthSlider = document.querySelector(".slider2").offsetWidth;
     const sliderContent = document.querySelector(".slider_content2");
-    sliderContent.scrollLeft += widthSlider;
+
+    sliderContent.scrollLeft += widthSlider + 35;
     const scrollLeft = sliderContent.scrollLeft;
     const itemsSlider = sliderContent.querySelectorAll(".slider_content_item2");
 
