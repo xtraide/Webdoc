@@ -24,14 +24,16 @@ nav {
 
 nav .play-mute img {
     position: relative;
-    top: 25%;
-    width: 4rem;
     height: auto;
+}
 
-
+nav #play img {
+    width: 3rem;
+    top: 30%;
 }
 
 nav #mute img {
+    width: 4rem;
     top: 17%;
 }
 
@@ -54,9 +56,9 @@ nav .play-mute {
 nav #circle {
     position: absolute;
     top: 0px;
-    left: calc(50% - (27rem)/2);
+    left: calc(50% - (20rem)/2);
     height: 13.5rem;
-    width: 25rem;
+    width: 20rem;
     background-color: #151515;
     border-radius: 100%;
     display: flex;
@@ -65,6 +67,7 @@ nav #circle {
 }
 
 nav h1 {
+    color: #373737;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -79,12 +82,24 @@ nav h1 {
 
 }
 
+nav #h1v2 {
+    margin-left: 1rem;
+    margin-top: 3rem;
+    color: #373737;
+    font-family: League Gothic;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 87.5%;
+    /* 21px */
+    text-transform: uppercase;
+}
+
 #navimg {
     margin-top: auto;
     margin-bottom: auto;
     height: 100%;
-    position: relative;
-    left: calc(100% - 130px - 15rem);
+    margin-left: calc(77% - 80px - 13.5rem);
     /* taile de l'element - taile de item - taile de #circle*/
 
 }
