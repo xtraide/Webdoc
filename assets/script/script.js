@@ -103,9 +103,10 @@ function isMuted() {
 }
 
 function fadout() {
+    $("#loader").play();
     $("#loader").fadeOut(1500);
 }
 let time
 $(document).ready(function () {
-    time = setTimeout(fadout, 5000);//code, temps de video
+    time = setTimeout(fadout, 3000);//code, temps de video
 });

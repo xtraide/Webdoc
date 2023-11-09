@@ -350,7 +350,7 @@ inter
 
 /*LOADER*/
 #loader {
-    background: url('../ressource/img/guere.png') 50% 50% no-repeat rgba(255, 255, 255, 0.8);
+    background: 50% 50% no-repeat rgba(61, 61, 61, 0.8);
     cursor: none;
     height: 100%;
     left: 0;
@@ -358,7 +358,6 @@ inter
     top: 0;
     width: 100%;
     z-index: 9999;
-
 }
 
 
