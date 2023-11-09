@@ -101,3 +101,11 @@ function isMuted() {
         return false;
     }
 }
+
+function fadout() {
+    $("#loader").fadeOut(1500);
+}
+let time
+$(document).ready(function () {
+    time = setTimeout(fadout, 5000);//code, temps de video
+});
