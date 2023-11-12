@@ -103,10 +103,21 @@ function isMuted() {
 }
 
 function fadout() {
-    $("#loader").play();
+
     $("#loader").fadeOut(1500);
 }
 let time
 $(document).ready(function () {
+
     time = setTimeout(fadout, 3000);//code, temps de video
 });
+
+var promise = document.querySelector('video').play();
+
+if (promise !== undefined) {
+    promise.then(_ => {
+        console.log('TESTE')
+    }).catch(error => {
+        console.log('BATE')
+    });
+}
