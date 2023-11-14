@@ -1,6 +1,5 @@
 #container-intro .base-text {
     width: 50%;
-
 }
 
 /*NAV*/
@@ -64,17 +63,17 @@ nav h1 {
     margin-left: 1rem;
     margin-top: auto;
     margin-bottom: auto;
-    width: 16rem;
+    width: auto;
 
 }
 
 nav #h1v2 {
-    padding-top: 1rem;
+    padding-top: 2rem;
     text-align: left;
-    width: 169px;
+    width: 180px;
     margin-left: 1rem;
     color: #373737;
-    font-family: League Gothic;
+    font-family: "the";
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -82,21 +81,7 @@ nav #h1v2 {
     text-transform: uppercase;
 }
 
-@media (max-width:1240px) {
-    nav #h1v2 {
-        position: absolute;
 
-        right: 7rem;
-
-    }
-}
-
-@media (max-width:900px) {
-    nav #h1v2 {
-        width: 129px;
-        padding-top: 0px;
-    }
-}
 
 #navimg {
     position: absolute;
@@ -125,13 +110,14 @@ nav ul {
 }
 
 nav ul li {
+    font-family: 'the';
     margin-top: 2rem;
     position: relative;
     z-index: 2;
     padding-right: 2rem;
-    font-size: 22px;
+    font-size: 30px;
     font-style: normal;
-    font-weight: 400;
+    letter-spacing: 0.5px;
     line-height: normal;
     text-transform: uppercase;
     display: inline-block;
@@ -177,27 +163,33 @@ img {
 body {
     margin: 0;
     background-color: #151515;
-    font-family: League Gothic;
+    font-family: 'the';
     color: #878787;
     text-align: center;
 }
 
 .titre {
-    font-size: 55px;
+    color: #878787;
+
+    text-align: center;
+    font-family: "star";
+    font-size: 45px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-    padding-bottom: 4rem;
 }
 
 .base-text {
+    color: #878787;
+
+    text-align: justify;
+
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
-    text-align: justify;
 }
 
 .none {
@@ -383,4 +375,38 @@ video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width:1439px) {
+
+
+
+    nav ul li {
+        font-size: 21px;
+    }
+}
+
+@media (max-width:1023px) {
+    nav ul li {
+        font-size: 16px;
+        letter-spacing: 0px;
+    }
+
+    nav #h1v2 {
+        position: absolute;
+        right: 5rem;
+        font-style: 15;
+        width: 129px;
+        padding-top: 1rem;
+    }
+}
+
+@font-face {
+    font-family: 'star';
+    src: url('StardosStencil-Regular.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'the';
+    src: url('LeagueGothic-Regular-VariableFont_wdth.ttf') format("truetype")
 }
