@@ -29,6 +29,7 @@ nav .play-mute:hover {
 }
 
 nav .play-mute {
+
     height: 6rem;
     width: 6rem;
     background-color: #D9D9D9;
@@ -96,7 +97,7 @@ nav #h1v2 {
 
 }
 
-#container-nav {
+nav #container-nav {
     margin-top: 68px;
     margin-bottom: auto;
     display: flex;
@@ -110,6 +111,130 @@ nav ul {
 }
 
 nav ul li {
+    font-family: 'the';
+    margin-top: 2rem;
+    position: relative;
+    z-index: 2;
+    padding-right: 2rem;
+    font-size: 30px;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    line-height: normal;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+#fixedNav {}
+
+#fixedNav {
+    position: fixed;
+    width: 100%;
+    height: 16rem;
+}
+
+#fixedNav .play-mute img {
+    position: relative;
+    height: auto;
+}
+
+#fixedNav #play img {
+    width: 3rem;
+    top: 30%;
+}
+
+#fixedNav #mute img {
+    width: 4rem;
+    top: 17%;
+}
+
+#fixedNav .play-mute:hover {
+    transition: background-color 0.2s;
+    background-color: #929292;
+}
+
+#fixedNav .play-mute {
+
+    height: 6rem;
+    width: 6rem;
+    background-color: #D9D9D9;
+    border-radius: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+#fixedNav #circle {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - (20rem)/2);
+    height: 13.5rem;
+    width: 20rem;
+    background-color: #151515;
+    border-radius: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+#fixedNav h1 {
+    color: #373737;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 87.5%;
+    text-align: left;
+    /* 56px */
+    text-transform: uppercase;
+    margin-left: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: auto;
+
+}
+
+#fixedNav #h1v2 {
+    padding-top: 2rem;
+    text-align: left;
+    width: 180px;
+    margin-left: 1rem;
+    color: #373737;
+    font-family: "the";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 87.5%;
+    text-transform: uppercase;
+}
+
+
+
+#fixedNav #navimg {
+    position: absolute;
+    top: 79px;
+    right: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 64px;
+    height: 59px;
+
+    /* taile de l'element - taile de item - taile de #circle*/
+
+}
+
+#fixedNav #container-nav {
+    margin-top: 68px;
+    margin-bottom: auto;
+    display: flex;
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 5rem;
+}
+
+#fixedNav ul {
+    text-align: center;
+}
+
+#fixedNav ul li {
     font-family: 'the';
     margin-top: 2rem;
     position: relative;
