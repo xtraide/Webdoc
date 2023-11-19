@@ -14,13 +14,13 @@ nav .play-mute img {
 }
 
 nav #play img {
-    width: 3rem;
-    top: 30%;
+    width: 2rem;
+    top: 38%;
 }
 
 nav #mute img {
-    width: 4rem;
-    top: 17%;
+    width: 3rem;
+    top: 25%;
 }
 
 nav .play-mute:hover {
@@ -534,4 +534,9 @@ video {
 @font-face {
     font-family: 'the';
     src: url('LeagueGothic-Regular-VariableFont_wdth.ttf') format("truetype")
+}
+
+@font-face {
+    font-family: 'post';
+    src: url('postnobillscolombo-regular.ttf') format("truetype")
 }
