@@ -111,28 +111,28 @@ function isMuted() {
 
 
 
-function scrollCircle() {
-    if (document.documentElement.scrollTop > 50) {
-        let play_mute = document.getElementsByTagName();
-        play_mute.style.position = "fixed";
-        play_mute.style.backgroundColor = "none";
-        play_mute.style.zIndex = "none";
-
-
-
+function switchNav() {
+    if (document.documentElement.scrollTop > 68) {
+        document.getElementsByTagName('nav')[0].classList.add('fixedNav');
+        document.getElementsByTagName('nav')[0].classList.remove('basicNav');
+    } else {
+        document.getElementsByTagName('nav')[0].classList.remove('fixedNav');
+        document.getElementsByTagName('nav')[0].classList.add('basicNav');
     }
 }
 function fadout() {
 
     $("#loader").fadeOut(1500);
+    document.body.style.overflow = "auto";
 }
+
 let time
 $(document).ready(function () {
-
-    time = setTimeout(fadout, 3000);//code, temps de video
+    document.body.style.overflow = "hidden";
+    time = setTimeout(fadout, 3500);//code, temps de video
 });
 
-window.onscroll = function () { scrollCircle() };
+window.onscroll = function () { switchNav(); };
 
 
 
