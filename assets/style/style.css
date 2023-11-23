@@ -80,7 +80,7 @@ nav .play-mute {
     width: 180px;
     margin-left: 1rem;
     color: #373737;
-    font-family: "post";
+    font-family: "petitre";
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -117,7 +117,8 @@ nav .play-mute {
 }
 
 .basicNav ul li {
-    font-family: 'base';
+    color: #D9D9D9;
+    font-family: 'navtxt';
     margin-top: 10px;
     position: relative;
     z-index: 2;
@@ -128,6 +129,10 @@ nav .play-mute {
     line-height: normal;
     text-transform: uppercase;
     display: inline-block;
+}
+
+.basicNav ul li:hover {
+    color: #F4D03F;
 }
 
 /*FIXED NAV*/
@@ -220,21 +225,31 @@ nav .play-mute {
 
 .fixedNav ul {
     text-align: center;
+    width: fit-content;
+    float: right;
+    margin-right: 1rem;
 }
 
 .fixedNav ul li {
-    font-family: 'base';
+    font-family: 'navtxt';
     margin-top: 2rem;
+    text-align: right;
     position: relative;
     z-index: 2;
-    padding-right: 2rem;
-    font-size: 30px;
+    color: #D9D9D9;
+    font-size: 20px;
     font-style: normal;
     letter-spacing: 0.5px;
     line-height: normal;
     text-transform: uppercase;
-    display: inline-block;
+    list-style-type: none;
+
 }
+
+.fixedNav ul li:hover {
+    color: #F4D03F;
+}
+
 
 /* SCROLLBAR*/
 ::-webkit-scrollbar {
@@ -521,15 +536,15 @@ video {
 
 @font-face {
     font-family: 'petitre';
-    src: url('LeagueGothic_SemiCondensed-Regular.ttf') format("truetype")
+    src: url("LeagueGothic-Regular-VariableFont_wdth.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: 'navtxt';
+    src: url('postnobillscolombo-extrabold.ttf') format("truetype")
 }
 
 @font-face {
     font-family: 'base';
     src: url('Manrope-VariableFont_wght.ttf') format("truetype")
-}
-
-@font-face {
-    font-family: 'post';
-    src: url('postnobillscolombo-regular.ttf') format("truetype")
 }
