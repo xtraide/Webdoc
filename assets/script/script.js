@@ -129,13 +129,34 @@ function fadout() {
 let time
 $(document).ready(function () {
     document.body.style.overflow = "hidden";
-    time = setTimeout(fadout, 3500);//code, temps de video
+    time = setTimeout(fadout, 4500);//code, temps de video
 });
 
 window.onscroll = function () { switchNav(); };
 
 
+const fadeUpElements = document.querySelectorAll(".fade-up-element");
 
+function checkFadeUpElements() {
+    fadeUpElements.forEach((element, index) => {
+        const elementRect = element.getBoundingClientRect();
+        const screenHeight = window.innerHeight;
+
+        if (elementRect.top < screenHeight) {
+            document.getElementById('navUl').getElementsByTagName('a')[index].style.color = "#F4D03F";
+            setTimeout(() => {
+                element.classList.add("fade-up-visible");
+            }, index * 30);
+        } else {
+            document.getElementById('navUl').getElementsByTagName('a')[index].style.color = "#D9D9D9";
+            element.classList.remove("fade-up-visible");
+        }
+    });
+}
+
+window.addEventListener("scroll", checkFadeUpElements);
+
+window.addEventListener("load", checkFadeUpElements);
 
 
 
