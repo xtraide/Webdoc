@@ -112,7 +112,7 @@ function isMuted() {
 
 
 function switchNav() {
-    if (document.documentElement.scrollTop > 68) {
+    if (document.documentElement.scrollTop > 80) {
         document.getElementsByTagName('nav')[0].classList.add('fixedNav');
         document.getElementsByTagName('nav')[0].classList.remove('basicNav');
     } else {

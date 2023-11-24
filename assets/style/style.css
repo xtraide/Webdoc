@@ -1,11 +1,8 @@
-#container-intro .base-text {
-    width: 50%;
-}
+/* || nav*/
 
-/*NAV*/
+
 nav {
     width: 100%;
-    height: 16rem;
 }
 
 nav ul li a {
@@ -14,8 +11,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-
     color: #F4D03F !important;
+}
+
+.basicNav {
+    position: absolute;
 }
 
 .basicNav .play-mute img {
@@ -71,7 +71,6 @@ nav ul li a:hover {
     font-weight: 400;
     line-height: 87.5%;
     text-align: left;
-    /* 56px */
     text-transform: uppercase;
     margin-left: 1rem;
     margin-top: auto;
@@ -93,8 +92,6 @@ nav ul li a:hover {
     line-height: 87.5%;
     text-transform: uppercase;
 }
-
-
 
 #navimg {
     position: absolute;
@@ -120,7 +117,6 @@ nav ul li a:hover {
 }
 
 .basicNav ul li {
-
     font-family: 'navtxt';
     margin-top: 10px;
     position: relative;
@@ -135,8 +131,8 @@ nav ul li a:hover {
 }
 
 
+/* || FIXED NAV*/
 
-/*FIXED NAV*/
 
 .fixedNav {
     position: fixed;
@@ -195,7 +191,6 @@ nav ul li a:hover {
     font-weight: 400;
     line-height: 87.5%;
     text-align: left;
-    /* 56px */
     text-transform: uppercase;
     margin-left: 1rem;
     margin-top: auto;
@@ -218,8 +213,6 @@ nav ul li a:hover {
     text-transform: uppercase;
 }
 
-
-
 .fixedNav #navimg {
     position: absolute;
     top: 10px;
@@ -229,9 +222,6 @@ nav ul li a:hover {
     width: 64px;
     height: 59px;
     filter: invert(100%);
-
-    /* taile de l'element - taile de item - taile de #circle*/
-
 }
 
 .fixedNav #container-nav {
@@ -250,25 +240,22 @@ nav ul li a:hover {
 
 .fixedNav ul li {
     font-family: 'navtxt';
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-align: right;
     position: relative;
     z-index: 2;
     color: #D9D9D9;
     font-size: 20px;
     font-style: normal;
-
     line-height: normal;
     text-transform: uppercase;
     list-style-type: none;
-
-
 }
 
 
+/* || SCROLLBAR */
 
 
-/* SCROLLBAR*/
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -289,11 +276,11 @@ nav ul li a:hover {
     background: #ffffff;
 }
 
-/* 
-FIN SCROLLBAR
-*/
 
-/*UTILE*/
+
+/* || UTILITIES */
+
+
 .verti-center {
     margin-top: auto;
     margin-bottom: auto;
@@ -302,13 +289,11 @@ FIN SCROLLBAR
 img {
     height: auto;
     width: 100%;
-
 }
 
 body {
     margin: 0;
     background-color: #151515;
-
     text-align: center;
 }
 
@@ -329,12 +314,10 @@ body {
     font-family: 'base';
     color: #878787;
     text-align: justify;
-
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
 }
 
 .none {
@@ -348,16 +331,26 @@ body {
 
 article {
     width: 80%;
-
     margin-bottom: 7%;
 }
 
-/* FIN UTILE*/
 
-/*Fonda*/
+/* || container-intro */
+
+
+#container-intro {
+    padding-top: 20rem;
+}
+
+#container-intro .base-text {
+    width: 50%;
+}
+
+
+/* || container-Fonda-lieu*/
+
 
 #container-fonda-lieu {
-
     text-align: left;
     display: flex;
     justify-content: space-evenly;
@@ -373,13 +366,10 @@ article {
     height: auto;
 }
 
-/*
-FIN Fonda
-*/
 
-/*
-interviews
-*/
+/* || container-interviews */
+
+
 #container-interviews {
     overflow: hidden;
 }
@@ -395,7 +385,6 @@ interviews
     float: right;
     margin-top: 0px;
 }
-
 
 #interviews {
     margin-left: 2rem;
@@ -466,12 +455,7 @@ interviews
 }
 
 
-/* 
-FIn interviews
-*/
-
-/*Collec*/
-
+/* || container-Collec */
 
 
 #container-collec .base-text {
@@ -479,23 +463,19 @@ FIn interviews
 
 }
 
-/*Fin Collec*/
 
-/*Footer*/
+/* || Footer*/
 footer .base-text {
     text-align: center;
 }
 
-/*Fin Footer*/
-/*
-inter
-*/
+
+/* || container-inte */
 
 
 #container-inte .base-text {
     width: 60%;
 }
-
 
 #container-inte img {
     margin-bottom: 3rem;
@@ -503,7 +483,9 @@ inter
 }
 
 
-/*LOADER*/
+/* || LOADER*/
+
+
 #loader {
     position: fixed;
     top: 0;
@@ -522,29 +504,63 @@ video {
     object-fit: cover;
 }
 
+/* || MEDIA QUERIES */
+
+
 @media (max-width:1439px) {
+    nav ul li a {
+        font-size: 20px;
+    }
 
+    .fixedNav #h1v2 {
+        position: absolute;
+        float: right;
+        margin-right: 1rem;
+        font-size: 15px;
+        width: 129px;
+        padding-top: 1rem;
+    }
 
+    .basicNav #h1v2 {
+        position: absolute;
+        float: right;
+        margin-right: 1rem;
 
-    nav ul li {
-        font-size: 21px;
+        width: 129px;
+        padding-top: 1rem;
+    }
+
+    .basicNav #circle {
+        top: 28px;
+        left: calc(50% - (15rem)/2);
+        height: 10rem;
+        width: 15rem;
+    }
+
+    .fixedNav #circle {
+        left: calc(50% - (15rem)/2);
+        height: 10rem;
+        width: 15rem;
     }
 }
 
 @media (max-width:1023px) {
-    nav ul li {
-        font-size: 16px;
+    nav ul li a {
+        font-size: 15px;
         letter-spacing: 0px;
     }
 
     nav #h1v2 {
-        position: absolute;
         right: 5rem;
-        font-style: 15;
         width: 129px;
         padding-top: 1rem;
+        font-size: 15px;
     }
 }
+
+
+/* || @font-face */
+
 
 @font-face {
     font-family: 'titre';
@@ -565,6 +581,10 @@ video {
     font-family: 'base';
     src: url('Manrope-VariableFont_wght.ttf') format("truetype")
 }
+
+
+/* || fade-up */
+
 
 .fade-up-element {
     opacity: 0;
