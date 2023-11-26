@@ -1,5 +1,8 @@
 /* || nav*/
-
+#logo {
+    width: 230px;
+    height: auto;
+}
 
 nav {
     width: 100%;
@@ -11,7 +14,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #F4D03F !important;
+    color: #D9D9D9 !important;
 }
 
 .basicNav {
@@ -64,20 +67,6 @@ nav ul li a:hover {
     z-index: 1;
 }
 
-.basicNav h1 {
-    color: #373737;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 87.5%;
-    text-align: left;
-    text-transform: uppercase;
-    margin-left: 1rem;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: auto;
-
-}
 
 .basicNav #h1v2 {
     padding-top: 2rem;
@@ -182,21 +171,6 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     z-index: 1;
-}
-
-.fixedNav h1 {
-    color: #D9D9D9;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 87.5%;
-    text-align: left;
-    text-transform: uppercase;
-    margin-left: 1rem;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: auto;
-
 }
 
 .fixedNav #h1v2 {

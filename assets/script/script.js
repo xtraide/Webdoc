@@ -143,12 +143,12 @@ function checkFadeUpElements() {
         const screenHeight = window.innerHeight;
 
         if (elementRect.top < screenHeight) {
-            document.getElementById('navUl').getElementsByTagName('a')[index].style.color = "#F4D03F";
+            document.getElementById('navUl').getElementsByTagName('a')[index].style.color = "#D9D9D9";
             setTimeout(() => {
                 element.classList.add("fade-up-visible");
             }, index * 30);
         } else {
-            document.getElementById('navUl').getElementsByTagName('a')[index].style.color = "#D9D9D9";
+            document.getElementById('navUl').getElementsByTagName('a')[index].style.color = "#878787";
             element.classList.remove("fade-up-visible");
         }
     });
