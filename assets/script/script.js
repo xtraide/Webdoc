@@ -1,5 +1,5 @@
 document.getElementById('mute').addEventListener('click', function () {
-    switchPlay_Mute("mute");
+    switchPlay_Mute("img_container");
 });
 document.getElementById('play').addEventListener('click', function () {
     switchPlay_Mute("play");
@@ -143,7 +143,7 @@ function checkFadeUpElements() {
         const screenHeight = window.innerHeight;
 
         if (elementRect.top < screenHeight) {
-            document.getElementById('navUl').getElementsByTagName('a')[index].style.color = "#D9D9D9";
+            document.getElementById('navUl').getElementsByTagName('a')[index].style.color = "#F4D03F";
             setTimeout(() => {
                 element.classList.add("fade-up-visible");
             }, index * 30);
@@ -160,3 +160,17 @@ window.addEventListener("load", checkFadeUpElements);
 
 
 
+/* code du bg */
+
+document.addEventListener('DOMContentLoaded', function () {
+    const range = document.getElementById('mute');
+    const input = document.getElementById('input_container');
+
+    range.addEventListener("mouseover", () => {
+        input.classList.remove("none");
+    });
+
+    range.addEventListener("mouseout", () => {
+        input.classList.add("none");
+    });
+});

@@ -14,8 +14,16 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #D9D9D9 !important;
+    color: #F4D03F !important;
 }
+
+#deroulant {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
 
 .basicNav {
     position: absolute;
@@ -226,6 +234,9 @@ nav ul li a:hover {
     list-style-type: none;
 }
 
+/* || AUDIO */
+
+#volume {}
 
 /* || SCROLLBAR */
 
@@ -568,4 +579,44 @@ video {
 .fade-up-visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+
+#input_audio {
+    background-color: #D9D9D9;
+    height: 90px;
+}
+
+
+
+#mute {
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+#img_container {
+    padding-left: 24px;
+
+}
+
+#input_container {
+    position: relative;
+    left: -23%;
+    background-color: #929292;
+    border: 6px solid #151515;
+    border-radius: 0 35% 35% 0;
+    border-left: none;
+    padding-left: 40px;
+    padding-right: 24px;
+    z-index: -1;
+
+}
+
+#mute:hover {
+    background-color: #929292;
+
 }
