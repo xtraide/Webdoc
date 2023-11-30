@@ -126,6 +126,12 @@ function fadout() {
     document.body.style.overflow = "auto";
 }
 
+function play_theme() {
+    var audio = new Audio('../assets/ressource/son/Click_-_Sound_Effect_HD.mp3');
+    audio.play();
+    audio.volume = 0.5;
+}
+
 let time
 $(document).ready(function () {
     document.body.style.overflow = "hidden";
@@ -133,6 +139,8 @@ $(document).ready(function () {
 });
 
 window.onscroll = function () { switchNav(); };
+window.onclick = function () { play_theme(); };
+
 
 
 const fadeUpElements = document.querySelectorAll(".fade-up-element");
