@@ -147,11 +147,18 @@ const fadeUpElements = document.querySelectorAll(".fade-up-element");
 
 function checkFadeUpElements() {
     fadeUpElements.forEach((element, index) => {
+
         const elementRect = element.getBoundingClientRect();
         const screenHeight = window.innerHeight;
 
         if (elementRect.top < screenHeight) {
-            document.getElementById('navUl').getElementsByTagName('a')[index].style.color = "#ebedeb";
+            var coloredElement = document.getElementsByTagName('li')[index];
+            var computedStyle = window.getComputedStyle(coloredElement);
+            var color = computedStyle.getPropertyValue('color');
+
+            document.getElementById('navUl').getElementsByTagName('a')[index].style.color = color;
+
+
             setTimeout(() => {
                 element.classList.add("fade-up-visible");
             }, index * 30);

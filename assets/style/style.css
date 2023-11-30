@@ -11,14 +11,54 @@ nav {
     width: 100%;
 }
 
+nav ul> :first-child {
+    color: aqua !important;
+}
+
+nav ul> :first-child a:hover {
+    color: aqua;
+}
+
+nav ul> :nth-child(2) {
+    color: red !important;
+}
+
+nav ul> :nth-child(2) a:hover {
+    color: red !important;
+}
+
+nav ul> :nth-child(3) {
+    color: rgb(242, 255, 0) !important;
+}
+
+nav ul> :nth-child(3) a:hover {
+    color: rgb(242, 255, 0) !important;
+}
+
+nav ul> :nth-child(4) {
+    color: rgb(0, 255, 34) !important;
+}
+
+nav ul> :nth-child(4) a:hover {
+    color: rgb(0, 255, 34) !important;
+}
+
+nav ul> :nth-child(5) {
+    color: rgb(0, 255, 221) !important;
+}
+
+nav ul> :nth-child(5) a:hover {
+    color: rgb(0, 255, 221) !important;
+}
+
+
+
 nav ul li a {
     text-decoration: none;
     outline: none;
 }
 
-nav ul li a:hover {
-    color: #ebedeb !important;
-}
+
 
 #deroulant {
     height: 100%;
@@ -164,6 +204,7 @@ nav ul li a:hover {
 }
 
 .basicNav #mute:hover {
+
     background-color: #929292;
 
 }
@@ -303,6 +344,7 @@ nav ul li a:hover {
 
     position: relative;
     left: -23%;
+    transition: ;
     background-color: #929292;
     border-radius: 0 100% 100% 0;
     border-left: none;
@@ -314,6 +356,7 @@ nav ul li a:hover {
 }
 
 .fixedNav #mute:hover {
+
     background-color: #929292;
 
 }
@@ -373,8 +416,7 @@ body {
 }
 
 .titre {
-    color: #878787;
-
+    color: #D9D9D9;
     text-align: center;
     font-family: "titre";
     font-size: 45px;
@@ -385,11 +427,11 @@ body {
 }
 
 .base-text {
-    color: #878787;
+
     font-family: 'base';
-    color: #878787;
+    color: #D9D9D9;
     text-align: justify;
-    font-size: 25px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -475,11 +517,15 @@ article {
 #right-arrow {
     position: absolute;
     right: 2rem;
+    width: 100px;
+    height: 100px;
 }
 
 #left-arrow {
     position: absolute;
     left: 2rem;
+    width: 100px;
+    height: auto;
 }
 
 
@@ -529,7 +575,6 @@ article {
     margin-right: 35px;
 }
 
-
 /* || container-Collec */
 
 
@@ -546,8 +591,6 @@ footer .base-text {
 
 
 /* || container-inte */
-
-
 #container-inte .base-text {
     width: 60%;
 }
