@@ -143,7 +143,7 @@ function checkFadeUpElements() {
         const screenHeight = window.innerHeight;
 
         if (elementRect.top < screenHeight) {
-            document.getElementById('navUl').getElementsByTagName('a')[index].style.color = "#F4D03F";
+            document.getElementById('navUl').getElementsByTagName('a')[index].style.color = "#ebedeb";
             setTimeout(() => {
                 element.classList.add("fade-up-visible");
             }, index * 30);
