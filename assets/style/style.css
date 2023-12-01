@@ -4,7 +4,7 @@
 
 #logo {
     width: 230px;
-    height: auto;
+    height: 80px;
 }
 
 nav {
@@ -12,11 +12,11 @@ nav {
 }
 
 nav ul> :first-child {
-    color: aqua !important;
+    color: #F4D03F !important;
 }
 
 nav ul> :first-child a:hover {
-    color: aqua;
+    color: #F4D03F;
 }
 
 nav ul> :nth-child(2) {
@@ -616,7 +616,7 @@ footer .base-text {
     z-index: 9999;
 }
 
-video {
+#loader video {
     width: 100%;
     height: 100%;
     object-fit: cover;
