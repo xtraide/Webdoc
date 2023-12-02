@@ -34,6 +34,31 @@ function switchPlay_Mute(local) {
 
 
 function previous1() {
+    const widthSlider = document.querySelector(".slider1").offsetWidth;
+    const sliderContent = document.querySelector(".slider_content1");
+    const scrollLeft = sliderContent.scrollLeft;
+    const itemsSlider = sliderContent.querySelectorAll(".slider_content_item1");
+
+    if (scrollLeft === 0) {
+        sliderContent.scrollLeft = widthSlider * (itemsSlider.length - 1);
+    } else {
+        sliderContent.scrollLeft -= widthSlider;
+    }
+}
+
+function next1() {
+    const widthSlider = document.querySelector(".slider1").offsetWidth;
+    const sliderContent = document.querySelector(".slider_content1");
+    const scrollLeft = sliderContent.scrollLeft;
+    const itemsSlider = sliderContent.querySelectorAll(".slider_content_item1");
+
+    if (scrollLeft + widthSlider >= widthSlider * (itemsSlider.length - 1)) {
+        sliderContent.scrollLeft = 0;
+    } else {
+        sliderContent.scrollLeft += widthSlider;
+    }
+}
+function previous2() {
     const widthSlider = document.querySelector(".slider2").offsetWidth;
     const sliderContent = document.querySelector(".slider_content2");
     const scrollLeft = sliderContent.scrollLeft;
@@ -46,11 +71,36 @@ function previous1() {
     }
 }
 
-function next1() {
+function next2() {
     const widthSlider = document.querySelector(".slider2").offsetWidth;
     const sliderContent = document.querySelector(".slider_content2");
     const scrollLeft = sliderContent.scrollLeft;
     const itemsSlider = sliderContent.querySelectorAll(".slider_content_item2");
+
+    if (scrollLeft + widthSlider >= widthSlider * (itemsSlider.length - 1)) {
+        sliderContent.scrollLeft = 0;
+    } else {
+        sliderContent.scrollLeft += widthSlider;
+    }
+}
+function previous3() {
+    const widthSlider = document.querySelector(".slider3").offsetWidth;
+    const sliderContent = document.querySelector(".slider_content3");
+    const scrollLeft = sliderContent.scrollLeft;
+    const itemsSlider = sliderContent.querySelectorAll(".slider_content_item3");
+
+    if (scrollLeft === 0) {
+        sliderContent.scrollLeft = widthSlider * (itemsSlider.length - 1);
+    } else {
+        sliderContent.scrollLeft -= widthSlider;
+    }
+}
+
+function next3() {
+    const widthSlider = document.querySelector(".slider3").offsetWidth;
+    const sliderContent = document.querySelector(".slider_content3");
+    const scrollLeft = sliderContent.scrollLeft;
+    const itemsSlider = sliderContent.querySelectorAll(".slider_content_item3");
 
     if (scrollLeft + widthSlider >= widthSlider * (itemsSlider.length - 1)) {
         sliderContent.scrollLeft = 0;
