@@ -471,6 +471,7 @@ article {
     text-align: left;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 #texte {
@@ -712,4 +713,14 @@ footer .base-text {
 .fade-up-visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex > div > img {
+    width: 90%;
 }
