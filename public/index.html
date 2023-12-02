@@ -1,122 +1,103 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/style/style.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="../assets/ressource/img/pleindemopng.png"
-    />
+    <link rel="icon" type="image/x-icon" href="../assets/ressource/img/pleindemopng.png" />
     <title>Webdocumentaire Une histoire dans l'Histoire</title>
     <script src="../assets/script/code.jquery.com_jquery-3.7.1.min.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="loader">
-      <video autoplay muted>
-        <source src="" type="video/mp4" />
-        Your browser does not support the video tag.
-        <!-- ../assets/ressource/video/Animation_webdoc2.mp4-->
-      </video>
+        <video autoplay muted>
+            <source src="" type="video/mp4" />
+            Your browser does not support the video tag.
+            <!-- ../assets/ressource/video/Animation_webdoc2.mp4-->
+        </video>
     </div>
 
     <header>
-      <nav class="basicNav">
-        <section id="container-nav">
-          <a href="#">
-            <img
-              src="../assets/ressource/img/logo_site_webdoc.png"
-              alt="logo_site_webdoc"
-              id="logo"
-            />
-          </a>
-          <audio
-            src="../assets/ressource/son/theme_webdoc.mp3"
-            type="audio/mpeg"
-            id="playable"
-          ></audio>
+        <nav class="basicNav">
+            <section id="container-nav">
+                <a href="#">
+                    <img src="../assets/ressource/img/logo_site_webdoc.png" alt="logo_site_webdoc" id="logo" />
+                </a>
+                <audio src="../assets/ressource/son/theme_webdoc.mp3" type="audio/mpeg" id="playable"></audio>
 
-          <h2 id="h1v2">Le musée de la grande guerre</h2>
-          <div id="circle">
-            <div class="play-mute" id="play">
-              <img src="../assets/ressource/img/play.png" alt="" />
-              <img class="none" src="../assets/ressource/img/Stop.png" alt="" />
-            </div>
-            <div class="play-mute" id="mute">
-              <div id="img_container">
-                <img src="../assets/ressource/img/songOn.png" alt="" />
-                <img
-                  src="../assets/ressource/img/SongOff.png"
-                  alt=""
-                  class="none"
-                />
-              </div>
-              <div class="none" id="input_container">
-                <input type="range" id="input_audio" />
-              </div>
-            </div>
-          </div>
+                <h2 id="h1v2">Le musée de la grande guerre</h2>
+                <div id="circle">
+                    <div class="play-mute" id="play">
+                        <img src="../assets/ressource/img/play.png" alt="" />
+                        <img class="none" src="../assets/ressource/img/Stop.png" alt="" />
+                    </div>
+                    <div class="play-mute" id="mute">
+                        <div id="img_container">
+                            <img src="../assets/ressource/img/songOn.png" alt="" />
+                            <img src="../assets/ressource/img/SongOff.png" alt="" class="none" />
+                        </div>
+                        <div class="none" id="input_container">
+                            <input type="range" id="input_audio" />
+                        </div>
+                    </div>
+                </div>
 
-          <img src="../assets/ressource/img/image 2.png" alt="" id="navimg" />
-        </section>
+                <img src="../assets/ressource/img/image 2.png" alt="" id="navimg" />
+            </section>
 
-        <ul id="navUl">
-          <li><a href="#container-intro" class="nav_a">Introduction</a></li>
-          <li><a href="#container-fonda-lieu " class="nav_a">L'HISTOIRE</a></li>
-          <li><a href="#container-interviews" class="nav_a">Témoignage</a></li>
-          <li><a href="#container-collec" class="nav_a">Collection</a></li>
-          <li><a href="#container-inte" class="nav_a">Musée interactif</a></li>
-        </ul>
-      </nav>
+            <ul id="navUl">
+                <li><a href="#container-intro" class="nav_a">Introduction</a></li>
+                <li><a href="#container-fonda-lieu " class="nav_a">L'HISTOIRE</a></li>
+                <li><a href="#container-interviews" class="nav_a">Témoignage</a></li>
+                <li><a href="#container-collec" class="nav_a">Collection</a></li>
+                <li><a href="#container-inte" class="nav_a">Musée interactif</a></li>
+            </ul>
+        </nav>
     </header>
     <section>
-      <article id="container-intro" class="item-centerer fade-up-element">
-        <img
-          src="../assets/ressource/img/guere.png"
-          alt=""
-          id="img"
-          class="item-centerer"
-        />
-        <p class="base-text item-centerer">
-          Symboliquement inauguré le 11 novembre 2011, le musée de la grande
-          guerre du pays de Meaux se veut être la plus grande collection
-          d’Europe relative à la Première Guerre mondiale.
-        </p>
-      </article>
+        <article id="container-intro" class="item-centerer fade-up-element">
+            <img src="../assets/ressource/img/guere.png" alt="" id="img" class="item-centerer" />
+            <p class="base-text item-centerer">
+                Symboliquement inauguré le 11 novembre 2011, le musée de la grande
+                guerre du pays de Meaux se veut être la plus grande collection
+                d’Europe relative à la Première Guerre mondiale.
+            </p>
+        </article>
 
-      <article id="container-fonda-lieu" class="item-centerer fade-up-element">
-        <div id="texte">
-          <h1 class="titre" id="fonda">L'histoire d'un musée</h1>
-          <p class="base-text">
-            Inauguré par Nicolas Sarkozy à l'occasion du 93ème anniversaire de
-            l'armistice de 1918, le Musée de la Grande Guerre n'aurait pas vu le
-            jour sans la rencontre entre le maire de Meaux,
-            <strong>Jean-François Copé</strong> et le collectionneur spécialisé
-            dans la Première Guerre mondiale,
-            <strong>Jean-Pierre Verney</strong> .<br /><br />
+        <article id="container-fonda-lieu" class="item-centerer fade-up-element">
+            <div id="texte">
+                <h1 class="titre" id="fonda">L'histoire d'un musée</h1>
+                <p class="base-text">
+                    Inauguré par Nicolas Sarkozy à l'occasion du 93ème anniversaire de
+                    l'armistice de 1918, le Musée de la Grande Guerre n'aurait pas vu le
+                    jour sans la rencontre entre le maire de Meaux,
+                    <strong>Jean-François Copé</strong> et le collectionneur spécialisé
+                    dans la Première Guerre mondiale,
+                    <strong>Jean-Pierre Verney</strong> .<br /><br />
 
-            C'est en automne 2004 que le maire de Meaux rencontre l'historien.
-            Au cours de la visite d'une exposition, ce dernier reçoit un appel
-            de Boston concernant le rachat de l'œuvre de sa vie, une collection
-            de 30 000 objets relatifs à la première guerre mondiale. Désemparé
-            par l'idée que la France perde cet héritage du passé, le politicien
-            proposa l'idée de la racheter pour bâtir un musée où l'exposer.<br /><br />
+                    C'est en automne 2004 que le maire de Meaux rencontre l'historien.
+                    Au cours de la visite d'une exposition, ce dernier reçoit un appel
+                    de Boston concernant le rachat de l'œuvre de sa vie, une collection
+                    de 30 000 objets relatifs à la première guerre mondiale. Désemparé
+                    par l'idée que la France perde cet héritage du passé, le politicien
+                    proposa l'idée de la racheter pour bâtir un musée où l'exposer.<br /><br />
 
-            Installée au pied du Mémorial américain offert par les USA, en
-            hommage aux soldats tombés durant la guerre,
-            <strong>la construction du musée</strong> débuta en 2010 sous la
-            supervision de l'architecte <strong>Christophe Lab</strong> qui
-            voulait ce bâtiment “intemporel”.
-          </p>
-        </div>
-        <div id="imgdiv">
-          <img src="../assets/ressource/img/Jean-Pierre_Verney.jpeg" alt="" />
-        </div>
-      </article>
-
-      <article id="container-interviews" class="item-centerer fade-up-element">
+                    Installée au pied du Mémorial américain offert par les USA, en
+                    hommage aux soldats tombés durant la guerre,
+                    <strong>la construction du musée</strong> débuta en 2010 sous la
+                    supervision de l'architecte <strong>Christophe Lab</strong> qui
+                    voulait ce bâtiment “intemporel”.
+                </p>
+            </div>
+            <div id="imgdiv">
+                <img src="../assets/ressource/img/Jean-Pierre_Verney.jpeg" alt="" />
+            </div>
+        </article>
+        <!--
+        <article id="container-interviews" class="item-centerer fade-up-element">
+            
         <h1 class="titre">Interviews des employés du musée</h1>
         <div class="slider2 item-centerer">
           <div class="slider_nav2">
@@ -211,6 +192,7 @@
           </div>
         </div>
       </article>
+   
       <article id="container-interviews" class="item-centerer">
         <h1 class="titre">Témoignage à propos du musée</h1>
         <div class="slider2 item-centerer">
@@ -306,122 +288,301 @@
           </div>
         </div>
       </article>
+    -->
+        <article id="container-collec" class="item-centerer fade-up-element">
+            <h1 class="titre">Une collection à la hauteur de l'Histoire.</h1>
 
-      <article id="container-collec" class="item-centerer fade-up-element">
-        <h1 class="titre">Une collection à la hauteur de l'Histoire.</h1>
+            <img src="../assets/ressource/img/jsp.png" alt="" class="item-centerer" />
 
-        <img
-          src="../assets/ressource/img/jsp.png"
-          alt=""
-          class="item-centerer"
-        />
+            <p class="base-text item-centerer">
+                Point essentiel dans un musée, la collection se trouve ici être la
+                plus grande d'Europe relative à la première guerre mondiale. Ce sont
+                plus de 70 000 <strong>armes</strong>, <strong>tenues</strong>,
+                <strong>tableaux</strong>, <strong>véhicules</strong> et
+                <strong>outils</strong> d'époque qui sont préservés au musée de la
+                grande guerre, rendant ainsi cette collection inestimable, autant au
+                niveau monétaire que culturel. Étant à l'origine le fruit des efforts
+                de Jean-Pierre Vernay, de nombreux collectionneurs, pour la plupart
+                français, apportèrent leur pierre à l'édifice.<br /><br />
 
-        <p class="base-text item-centerer">
-          Point essentiel dans un musée, la collection se trouve ici être la
-          plus grande d'Europe relative à la première guerre mondiale. Ce sont
-          plus de 70 000 <strong>armes</strong>, <strong>tenues</strong>,
-          <strong>tableaux</strong>, <strong>véhicules</strong> et
-          <strong>outils</strong> d'époque qui sont préservés au musée de la
-          grande guerre, rendant ainsi cette collection inestimable, autant au
-          niveau monétaire que culturel. Étant à l'origine le fruit des efforts
-          de Jean-Pierre Vernay, de nombreux collectionneurs, pour la plupart
-          français, apportèrent leur pierre à l'édifice.<br /><br />
+                Malgré la prestance de la salle d'exposition, c'est dans
+                <strong>la réserve</strong> que se trouve la majeure partie de ce
+                morceau d'histoire. Deux pièces disposant chacune de deux étages
+                comblés de rayons exposants un nombre phénoménal d'objets en tout
+                genre se situent dans les coulisses du musée. C'est en entrant dans
+                une de ces pièces que l'on se rend compte des recherches, et du
+                travail titanesque effectué, tant au niveau de la préservation des
+                objets que de leur expertise. Les salles sont ventilées et conservent
+                une température ambiante très réglementée pour que les matériaux
+                sensibles, tels que <strong>le tissu des tenues</strong>, ne soient
+                pas dégradés ou déformés au fil du temps. Pour éviter tout type de
+                nuisible, les salles sont parsemées de lumières vertes anti-insectes
+                en permanence, ce qui a pour effet d'offrir une
+                <strong>ambiance</strong>
+                toute particulière à l'endroit lorsqu'on franchit le seuil de la porte
+                pour la première fois. *<br /><br />
 
-          Malgré la prestance de la salle d'exposition, c'est dans
-          <strong>la réserve</strong> que se trouve la majeure partie de ce
-          morceau d'histoire. Deux pièces disposant chacune de deux étages
-          comblés de rayons exposants un nombre phénoménal d'objets en tout
-          genre se situent dans les coulisses du musée. C'est en entrant dans
-          une de ces pièces que l'on se rend compte des recherches, et du
-          travail titanesque effectué, tant au niveau de la préservation des
-          objets que de leur expertise. Les salles sont ventilées et conservent
-          une température ambiante très réglementée pour que les matériaux
-          sensibles, tels que <strong>le tissu des tenues</strong>, ne soient
-          pas dégradés ou déformés au fil du temps. Pour éviter tout type de
-          nuisible, les salles sont parsemées de lumières vertes anti-insectes
-          en permanence, ce qui a pour effet d'offrir une
-          <strong>ambiance</strong>
-          toute particulière à l'endroit lorsqu'on franchit le seuil de la porte
-          pour la première fois. *<br /><br />
+                Pour qu'ils gardent leur aspect d'origine, les objets sont
+                <strong>méticuleusement manipulés</strong>, puis étudiés dans la
+                “<strong>salle de bichonnage</strong>” avec un équipement adéquat.
+                C'est ici quon <strong>retrace leurs émouvantes histoires</strong> en
+                démêlant les vestiges du passé.
+            </p>
+            <video src="" class="" width="100%" controls></video>
+            <div class="flex">
+                <div>
+                    <img src="../assets/ressource/img/Don_Duval_022023_1918_lettre9novembre_005.png" alt="" />
+                </div>
+                <div>
+                    <img src="../assets/ressource/img/Don_Duval_022023_1918_lettre9novembre_006.png" alt="" />
+                </div>
+                <div>
+                    <img src="../assets/ressource/img/Don_Duval_022023_1918_lettre9novembre_007.png" alt="" />
+                </div>
+            </div>
+            <audio controls>
+                <source src="" type="audio/mpeg" />
+            </audio>
+            <p class="base-text item-centerer">
+                Ma chère Lucienne,
+                <br />
+                <br />
+                […]
+                <br />
+                <br />
 
-          Pour qu'ils gardent leur aspect d'origine, les objets sont
-          <strong>méticuleusement manipulés</strong>, puis étudiés dans la
-          “<strong>salle de bichonnage</strong>” avec un équipement adéquat.
-          C'est ici quon <strong>retrace leurs émouvantes histoires</strong> en
-          démêlant les vestiges du passé.
-        </p>
+                Je suis un peu comme tous ici, un peu énervé par les évènements qui se
+                succèdent. Nous sommes constamment à l’affût des dépêches que l’on
+                affiche à la station de T.S.F. [télégraphie sans fil] installée à 20
+                mètres de nous. Cette comédie d’allées et venues des délégués boches
+                est assez amusante. Je reviens de copier le texte proposant d’envoyer
+                Helldorf[f] en avion. Je te l’envoie, je suis sûr qu’à cette heure-ci,
+                vous n’en avez pas connaissance à Menton. Il est vrai que lorsque tu
+                le recevras il y aura bien de l’eau coulée sous les ponts.
+                <br />
+                <br />
 
-        <div class="flex">
-          <div>
-            <img
-              src="../assets/ressource/img/Don_Duval_022023_1918_lettre9novembre_005.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="../assets/ressource/img/Don_Duval_022023_1918_lettre9novembre_006.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="../assets/ressource/img/Don_Duval_022023_1918_lettre9novembre_007.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <audio controls>
-          <source src="" type="audio/mpeg" />
-        </audio>
-        <p class="base-text item-centerer">
-          Ma chère Lucienne,
-          <br />
-          <br />
-          […]
-          <br />
-          <br />
+                Néanmoins, comme à chaque événement nouveau, ma pensée s’envole
+                aussitôt vers vous, je t’envoie ce petit papier comme souvenir des
+                heures angoissantes que nous vivons.
+                <br /><br />
 
-          Je suis un peu comme tous ici, un peu énervé par les évènements qui se
-          succèdent. Nous sommes constamment à l’affût des dépêches que l’on
-          affiche à la station de T.S.F. [télégraphie sans fil] installée à 20
-          mètres de nous. Cette comédie d’allées et venues des délégués boches
-          est assez amusante. Je reviens de copier le texte proposant d’envoyer
-          Helldorf[f] en avion. Je te l’envoie, je suis sûr qu’à cette heure-ci,
-          vous n’en avez pas connaissance à Menton. Il est vrai que lorsque tu
-          le recevras il y aura bien de l’eau coulée sous les ponts.
-          <br />
-          <br />
+                En dehors de cela que dire, tout autour de nous prend des proportions
+                si minimes qu’il m’est impossible de trouver aucun fat à te raconter.
+                <br /><br />
+                Je souhaite plus que jamais la signature de cet armistice, d’autant
+                plus que si cela n’aboutissait pas je craindrais que notre coin ne
+                soit plus aussi calme, et ce serait dommage pour nous.
+                <br /><br />
+                […]
+                <br /><br />
+                Non, ma petite je ne serais pas là pour le 1er janvier, bien heureux
+                si c’est le 1er février. Puisse- je avoir tort.
+                <br /><br />
+                […]
+                <br /><br />
+                Allons, aurevoir ma grande petite chérie je t’envoie une provision de
+                bons & amoureux baisers, il me semble que je ne t’en ai pas encore
+                assez donnés.
+                <br /><br />
+                Embrasse Jacqueline & toute la famille pour moi.
+                <br /><br />
+                Ton mari qui t’aime.
+            </p>
 
-          Néanmoins, comme à chaque événement nouveau, ma pensée s’envole
-          aussitôt vers vous, je t’envoie ce petit papier comme souvenir des
-          heures angoissantes que nous vivons.
-          <br /><br />
+        </article>
+        <article id="" class="item-centerer fade-up-element">
+            <h1 class="titre">
+                Un musée pour les grands, un éveil pour les petits.
+            </h1>
+            <img src="../assets/ressource/img/IMG_2301 1.png" alt="" />
 
-          En dehors de cela que dire, tout autour de nous prend des proportions
-          si minimes qu’il m’est impossible de trouver aucun fat à te raconter.
-          <br /><br />
-          Je souhaite plus que jamais la signature de cet armistice, d’autant
-          plus que si cela n’aboutissait pas je craindrais que notre coin ne
-          soit plus aussi calme, et ce serait dommage pour nous.
-          <br /><br />
-          […]
-          <br /><br />
-          Non, ma petite je ne serais pas là pour le 1er janvier, bien heureux
-          si c’est le 1er février. Puisse- je avoir tort.
-          <br /><br />
-          […]
-          <br /><br />
-          Allons, aurevoir ma grande petite chérie je t’envoie une provision de
-          bons & amoureux baisers, il me semble que je ne t’en ai pas encore
-          assez donnés.
-          <br /><br />
-          Embrasse Jacqueline & toute la famille pour moi.
-          <br /><br />
-          Ton mari qui t’aime.
-        </p>
-      </article>
+            <p class="base-text item-centerer w70">
+                Le Musée de la Grande Guerre offre une expérience immersive dès le
+                moment où vous arrivez.En entrant  dans l’enceinte du musée, vous
+                pouvez entendre des sons d'ambiance évoquant la Première Guerre
+                mondiale, avec des chants de guerre et des vrombissements d’avions,
+                vous plongeant immédiatement dans l'atmosphère de l'époque.
+                <br />
+                <br />
+                Une fois à l'intérieur, l’expérience se poursuit. Un panneau central
+                interpelle les visiteurs avec le message « tous en uniforme », les
+                invitant à se vêtir de costumes de soldat, infirmier ou commandant et
+                ressentir le poids et la texture des uniformes et des casques. Une
+                initiative immersive et interactive qui permet aux utilisateurs de se
+                connecter de manière plus personnelle avec l'histoire tout en
+                s’amusant. Dans la même veine, le musée propose aux visiteurs de
+                sentir du savon de guerre et de rédiger des lettres que le musée
+                expédiera à la personne destinataire, offrant ainsi une expérience
+                olfactive.
+                <br /><br />
+                Cette immersion ne se limite pas aux costumes et aux odeurs. Des
+                vidéos explicatives sont disséminées dans les salles et couloirs du
+                musée pour approfondir la compréhension des sujets présentés. Dans une
+                salle à l'écart, entourée de murs réfléchissants, des vidéos
+                historiques authentiques sont diffusées, créant une ambiance intense
+                avec principalement des coups de feu. Ces archives ajoutent une couche
+                d'authenticité, transportant les visiteurs au cœur des batailles de la
+                guerre.(pas repeter)
+                <br />
+                <br />
+                Néanmoins le son est omniprésent dans tout le musée, peut devenir
+                dérangeant à la longue. Pendant le tournage de ce webdocumentaire, il
+                a été difficile de trouver des endroits calmes pour réaliser des
+                interviews .
+                <br />
+                <br />
+                Enfin, pour tester les connaissances des visiteurs, des quiz sur la
+                Première Guerre mondiale sont disponibles sous forme de livret
+                disposer sur les murs disperser dans le musée , à l'expérience. Ainsi,
+                le Musée de la Grande Guerre offre une plongée complète dans
+                l'histoire, mêlant immersion sensorielle, vidéos authentiques et
+                interactions éducatives.
+            </p>
+            <!--ajouter un slider ici-->
+        </article>
 
+        <article id="container-interviews" class="item-centerer fade-up-element">
+
+            <h1 class="titre">Interviews des employés du musée</h1>
+            <div class="slider2 item-centerer">
+                <div class="slider_nav2">
+                    <button onclick="previous1();" class="slider_nav_button2 slider_nav_button_previous2"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="129" height="129" viewBox="0 0 129 129"
+                            fill="none" id="left-arrow">
+                            <circle cx="64.5" cy="64.5" r="64.5" fill="#D9D9D9" />
+                            <path
+                                d="M34.8787 62.8787C33.7071 64.0502 33.7071 65.9497 34.8787 67.1213L53.9706 86.2132C55.1421 87.3848 57.0416 87.3848 58.2132 86.2132C59.3848 85.0416 59.3848 83.1421 58.2132 81.9706L41.2426 65L58.2132 48.0294C59.3848 46.8579 59.3848 44.9584 58.2132 43.7868C57.0416 42.6152 55.1421 42.6152 53.9706 43.7868L34.8787 62.8787ZM92 62L37 62L37 68L92 68L92 62Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                    <button onclick="next1();" class="slider_nav_button2 slider_nav_button_next2" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="129" height="129" viewBox="0 0 129 129"
+                            fill="none" id="right-arrow">
+                            <circle cx="64.5" cy="64.5" r="64.5" fill="#D9D9D9" />
+                            <path
+                                d="M94.1213 67.1213C95.2929 65.9497 95.2929 64.0503 94.1213 62.8787L75.0294 43.7868C73.8579 42.6152 71.9584 42.6152 70.7868 43.7868C69.6152 44.9584 69.6152 46.8579 70.7868 48.0294L87.7574 65L70.7868 81.9706C69.6152 83.1421 69.6152 85.0416 70.7868 86.2132C71.9584 87.3848 73.8579 87.3848 75.0294 86.2132L94.1213 67.1213ZM92 62L37 62L37 68L92 68L92 62Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="slider_content2" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="slider_content_item2">
+                        <img src="../assets/ressource/img/manon.png" alt="" />
+                        <p class="base-text citation">
+                            “ Blablabla je parle, je parle et tout d’un coup je dis une
+                            phrase choc un peu longue comme ça mon nom est à droite de ce
+                            texte“
+                        </p>
+                        <p class="auteur-citation base-text">mon Cochon</p>
+                        <img src="../assets/ressource/img/manon.png" alt="" />
+                    </div>
+                    <div class="slider_content_item2">
+                        <img src="../assets/ressource/img/manon.png" alt="" />
+                        <p class="base-text citation">
+                            “ Blablabla je parle, je parle et tout d’un coup je dis une
+                            phrase choc un peu longue comme ça mon nom est à droite de ce
+                            texte“
+                        </p>
+                        <p class="auteur-citation base-text">mon Cochon</p>
+                        <img src="../assets/ressource/img/manon.png" alt="" />
+                    </div>
+                    <div class="slider_content_item2">
+                        <img src="../assets/ressource/img/manon.png" alt="" />
+                        <p class="base-text citation">
+                            “ Blablabla je parle, je parle et tout d’un coup je dis une
+                            phrase choc un peu longue comme ça mon nom est à droite de ce
+                            texte“
+                        </p>
+                        <p class="auteur-citation base-text">mon Cochon</p>
+                        <img src="../assets/ressource/img/manon.png" alt="" />
+                    </div>
+                    <div class="slider_content_item2">
+                        <img src="../assets/ressource/img/manon.png" alt="" />
+                        <p class="base-text citation">
+                            “ Blablabla je parle, je parle et tout d’un coup je dis une
+                            phrase choc un peu longue comme ça mon nom est à droite de ce
+                            texte“
+                        </p>
+                        <p class="auteur-citation base-text">mon Cochon</p>
+                        <img src="../assets/ressource/img/manon.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article id="container-interviews" class="item-centerer">
+            <h1 class="titre">Témoignage à propos du musée</h1>
+            <div class="slider2 item-centerer">
+                <div class="slider_nav2">
+                    <button onclick="previous1();" class="slider_nav_button2 slider_nav_button_previous2"
+                        data-aos="fade-up" data-aos-duration="1000">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="129" height="129" viewBox="0 0 129 129"
+                            fill="none" id="left-arrow">
+                            <circle cx="64.5" cy="64.5" r="64.5" fill="#D9D9D9" />
+                            <path
+                                d="M34.8787 62.8787C33.7071 64.0502 33.7071 65.9497 34.8787 67.1213L53.9706 86.2132C55.1421 87.3848 57.0416 87.3848 58.2132 86.2132C59.3848 85.0416 59.3848 83.1421 58.2132 81.9706L41.2426 65L58.2132 48.0294C59.3848 46.8579 59.3848 44.9584 58.2132 43.7868C57.0416 42.6152 55.1421 42.6152 53.9706 43.7868L34.8787 62.8787ZM92 62L37 62L37 68L92 68L92 62Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                    <button onclick="next1();" class="slider_nav_button2 slider_nav_button_next2" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="129" height="129" viewBox="0 0 129 129"
+                            fill="none" id="right-arrow">
+                            <circle cx="64.5" cy="64.5" r="64.5" fill="#D9D9D9" />
+                            <path
+                                d="M94.1213 67.1213C95.2929 65.9497 95.2929 64.0503 94.1213 62.8787L75.0294 43.7868C73.8579 42.6152 71.9584 42.6152 70.7868 43.7868C69.6152 44.9584 69.6152 46.8579 70.7868 48.0294L87.7574 65L70.7868 81.9706C69.6152 83.1421 69.6152 85.0416 70.7868 86.2132C71.9584 87.3848 73.8579 87.3848 75.0294 86.2132L94.1213 67.1213ZM92 62L37 62L37 68L92 68L92 62Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="slider_content2" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="slider_content_item2">
+                        <img src="../assets/ressource/img/manon.png" alt="" />
+                        <p class="base-text citation">
+                            “ Blablabla je parle, je parle et tout d’un coup je dis une
+                            phrase choc un peu longue comme ça mon nom est à droite de ce
+                            texte“
+                        </p>
+                        <p class="auteur-citation base-text">mon Cochon</p>
+                        <img src="../assets/ressource/img/manon.png" alt="" />
+                    </div>
+                    <div class="slider_content_item2">
+                        <img src="../assets/ressource/img/manon.png" alt="" />
+                        <p class="base-text citation">
+                            “ Blablabla je parle, je parle et tout d’un coup je dis une
+                            phrase choc un peu longue comme ça mon nom est à droite de ce
+                            texte“
+                        </p>
+                        <p class="auteur-citation base-text">mon Cochon</p>
+                        <img src="../assets/ressource/img/manon.png" alt="" />
+                    </div>
+                    <div class="slider_content_item2">
+                        <img src="../assets/ressource/img/manon.png" alt="" />
+                        <p class="base-text citation">
+                            “ Blablabla je parle, je parle et tout d’un coup je dis une
+                            phrase choc un peu longue comme ça mon nom est à droite de ce
+                            texte“
+                        </p>
+                        <p class="auteur-citation base-text">mon Cochon</p>
+                        <img src="../assets/ressource/img/manon.png" alt="" />
+                    </div>
+                    <div class="slider_content_item2">
+                        <img src="../assets/ressource/img/manon.png" alt="" />
+                        <p class="base-text citation">
+                            “ Blablabla je parle, je parle et tout d’un coup je dis une
+                            phrase choc un peu longue comme ça mon nom est à droite de ce
+                            texte“
+                        </p>
+                        <p class="auteur-citation base-text">mon Cochon</p>
+                        <img src="../assets/ressource/img/manon.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!--
       <article id="container-inte" class="item-centerer fade-up-element">
         <h1 class="titre">Comme si on y était…</h1>
         <img
@@ -431,15 +592,17 @@
         />
         <p class="base-text item-centerer">*texte remy nicolas*</p>
       </article>
+      -->
     </section>
     <footer class="item-centerer">
-      <p class="base-text">
-        Remy Hamelin <br />
-        Nicolas Marly <br />
-        Nicolas Thieblemont <br />
-        Matthieu Tissier
-      </p>
+        <p class="base-text">
+            Remy Hamelin <br />
+            Nicolas Marly <br />
+            Nicolas Thieblemont <br />
+            Matthieu Tissier
+        </p>
     </footer>
     <script src="../assets/script/script.js"></script>
-  </body>
+</body>
+
 </html>
